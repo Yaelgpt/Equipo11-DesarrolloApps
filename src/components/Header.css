@@ -1,0 +1,80 @@
+.header {
+  background-color: #c53030;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  perspective: 1000px;
+}
+
+.logo-tag {
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.2),
+    0 0 0 3px #333,
+    0 0 0 6px white;
+  transform: rotateX(5deg) rotateY(-5deg);
+  position: relative;
+}
+
+.logo-tag::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.logo-text {
+  font-family: 'Arial Black', Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: #333;
+  text-align: center;
+  line-height: 1;
+}
+
+.buen {
+  display: block;
+}
+
+.fin {
+  display: block;
+}
+
+.smiley {
+  color: #c53030;
+  font-size: 24px;
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 24px;
+  }
+  
+  .logo-tag {
+    padding: 12px 16px;
+  }
+}
+
+.logo-img {
+  width: 200px;
+  height: auto;
+}

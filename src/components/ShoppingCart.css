@@ -1,0 +1,196 @@
+.shopping-cart {
+  background-color: white;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 20px;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  max-height: 1200px;
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+}
+
+.cart-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 15px 10px 10px 10px;
+}
+
+.empty-cart {
+  text-align: center;
+  color: #666;
+  padding: 0 15px 15px 15px;
+  font-size: 12px;
+}
+
+.cart-header {
+  background-color: #f8f9fa;
+  padding: 10px 10px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.cart-total-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin: 15px 0;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.cart-table {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Tabla */
+.cart-items-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;          /* dejamos que el navegador calcule el ancho */
+}
+
+/* Encabezados */
+.cart-items-table th {
+    padding: 8px 4px;
+    text-align: left;
+    font-size: 13px;
+    white-space: nowrap;         /* que no se corten feo los títulos */
+}
+
+/* Celdas */
+.cart-items-table td {
+    padding: 8px 4px;
+    text-align: left;
+    white-space: normal;         /* aquí sí dejamos que haya saltos de línea */
+    word-break: break-word;      /* por si algún texto es muy largo */
+}
+
+/* Anchos por columna (ajusta porcentajes si quieres) */
+.cart-items-table th:nth-child(1),
+.cart-items-table td:nth-child(1) {
+    width: 45%;                  /* Descripción más ancha */
+}
+
+.cart-items-table th:nth-child(2),
+.cart-items-table td:nth-child(2) {
+    width: 20%;
+    text-align: right;           /* Precio */
+}
+
+.cart-items-table th:nth-child(3),
+.cart-items-table td:nth-child(3) {
+    width: 15%;
+    text-align: center;          /* Cantidad */
+}
+
+.cart-items-table th:nth-child(4),
+.cart-items-table td:nth-child(4) {
+    width: 20%;
+    text-align: right;           /* Importe */
+}
+
+.cart-items-table th:last-child {
+  width: 70px;
+  text-align: center;
+}
+
+.cart-items-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: middle;
+}
+
+.cart-items-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.item-description {
+  color: #333;
+  font-weight: 500;
+  max-width: 200px;
+  word-wrap: break-word;
+  font-size: 15px;
+  line-height: 1.4;
+  white-space: normal;
+}
+
+.item-price,
+.item-quantity,
+.item-total {
+  text-align: center;
+  color: #333;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.item-actions {
+  text-align: center;
+}
+
+.remove-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  margin: 0 auto;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+  transform: scale(1.1);
+}
+
+.remove-btn:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 900px) {
+  .shopping-cart {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .cart-header {
+    padding: 12px 15px;
+  }
+
+  .cart-total-title {
+    font-size: 16px;
+  }
+
+  .cart-items-table {
+    font-size: 12px;
+  }
+
+  .cart-items-table th,
+  .cart-items-table td {
+    padding: 8px 10px;
+  }
+
+  .item-description {
+    max-width: 100px;
+    font-size: 8px;
+  }
+
+  .remove-btn {
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+  }
+}
