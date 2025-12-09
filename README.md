@@ -1,5 +1,5 @@
 # Buen Fin - Aplicación de Ofertas
 
-Una aplicación web completa que replica la interfaz de ofertas del Buen Fin, construida con React, Vite y Node.js.
+Una aplicación movil que te indica el clima de hoy y de los proximos 5 dias asi como otras caracteristicas, construida con React native y Java.
 
 
